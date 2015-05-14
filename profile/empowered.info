@@ -1,0 +1,110 @@
+; Packaging information for empowered
+name = "Empowered"
+description = ""
+exclusive = "0"
+core = "7.x"
+; ----------
+; Dependencies
+; ----------
+; Core
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = update
+dependencies[] = user
+; Administration
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
+dependencies[] = module_filter
+; Chaos tool suite
+dependencies[] = ctools
+dependencies[] = page_manager
+dependencies[] = panels
+; Date/Time
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_context
+dependencies[] = date_popup
+dependencies[] = date_tools
+dependencies[] = date_views
+; Development
+dependencies[] = devel
+; Feeds
+dependencies[] = feeds
+dependencies[] = feeds_ui
+; Fields
+dependencies[] = email
+dependencies[] = entityreference
+dependencies[] = field_group
+dependencies[] = field_group_multiple
+dependencies[] = field_validation
+dependencies[] = field_validation_extras
+dependencies[] = field_validation_ui
+dependencies[] = link
+dependencies[] = advanced_text_formatter
+; Mail
+dependencies[] = htmlmail
+dependencies[] = mailsystem
+; Media
+dependencies[] = file_entity
+dependencies[] = file_lock
+dependencies[] = media
+dependencies[] = media_internet
+dependencies[] = plupload
+; Other
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = flood_control
+dependencies[] = job_scheduler
+dependencies[] = libraries
+dependencies[] = linkit
+dependencies[] = menu_attributes
+dependencies[] = pathauto
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = variable
+; Path management
+dependencies[] = globalredirect
+; Rules
+dependencies[] = rules
+; UUID
+dependencies[] = uuid
+; User interface
+dependencies[] = ckeditor
+dependencies[] = jquery_update
+; Views
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_ui
+; XML sitemap
+dependencies[] = xmlsitemap
+; Features
+dependencies[] = features
+; Empowered features
+dependencies[] = empowered_basic_contents
+dependencies[] = empowered_editing_settings
+dependencies[] = empowered_roles
+
+

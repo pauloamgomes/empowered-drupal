@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Empowered Basic Contents feature.
+ */
+
+include_once 'empowered_basic_contents.features.inc';

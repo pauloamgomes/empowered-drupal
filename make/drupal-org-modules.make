@@ -8,6 +8,8 @@ projects[module_filter][version] = "2.0"
 
 projects[ctools][version] = "1.7"
 
+projects[context][version] = "3.6"
+
 projects[date][version] = "2.8"
 
 projects[features][version] = "2.4"
@@ -119,6 +121,8 @@ projects[rabbit_hole][version] = 2.23
 projects[variable][version] = 2.5
 
 projects[backup_migrate][version] = 3.1
+
+projects[advanced_text_formatter][version] = 1.4
 
 ; security
 

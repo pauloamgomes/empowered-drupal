@@ -105,6 +105,7 @@ Module | Version
 [masquerade](http://drupal.org/project/masquerade)  | 1.0-rc7
 [devel_contrib](http://drupal.org/project/devel_contrib)  | 1.0
 [search_krumo](http://drupal.org/project/search_krumo)  | 1.6
+[advanced_text_formatter](http://drupal.org/project/advanced_text_formatter) | 1.4
 
 ## Libraries
 Library | Version

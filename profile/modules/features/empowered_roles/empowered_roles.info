@@ -1,0 +1,9 @@
+name = Empowered Roles
+description = Default roles
+core = 7.x
+package = Empowered
+version = 7.x-1.0
+project = empowered_roles
+dependencies[] = features
+features[features_api][] = api:2
+features[user_role][] = editor

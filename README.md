@@ -35,7 +35,7 @@ Module | Version
 [module_filter](http://drupal.org/project/module_filter)  | 2.0
 [ctools](http://drupal.org/project/ctools)  | 1.7
 [date](http://drupal.org/project/date)  | 2.8
-[features](http://drupal.org/project/features)  | 2.4
+[features](http://drupal.org/project/features)  | 2.5
 [feeds](http://drupal.org/project/feeds)  | 2.0-alpha8
 [email](http://drupal.org/project/email)  | 1.3
 [entityreference](http://drupal.org/project/entityreference)  | 1.1
@@ -66,7 +66,7 @@ Module | Version
 [uuid](http://drupal.org/project/uuid)  | 1.0-alpha6
 [ckeditor](http://drupal.org/project/ckeditor)  | 1.16
 [jquery_update](http://drupal.org/project/jquery_update)  | 2.5
-[views](http://drupal.org/project/views)  | 3.10
+[views](http://drupal.org/project/views)  | 3.11
 [views_litepager](http://drupal.org/project/views_litepager)  | 3.0
 [views_bulk_operations](http://drupal.org/project/views_bulk_operations)  | 3.2
 [webform](http://drupal.org/project/webform)  | 4.7

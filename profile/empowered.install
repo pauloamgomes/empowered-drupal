@@ -3,8 +3,8 @@
 /**
  * @file
  * Implements install hooks for empowered profile.
+ * @author Paulo Gomes <pauloamgomes@gmai.com>
  */
-
 
 /**
  * Implements hook_install().
@@ -86,7 +86,7 @@ function _empowered_set_roles() {
 /**
  * Implements hook_install_tasks_alter().
  */
-/*
+
 function empowered_install_tasks_alter(&$tasks, $install_state) {
   global $install_state;
   $tasks['install_profile_modules']['display_name'] = st('Install Empowered');
@@ -99,4 +99,4 @@ function empowered_install_tasks_alter(&$tasks, $install_state) {
   $tasks['install_select_locale']['run'] = INSTALL_TASK_SKIP;
   $install_state['parameters']['locale'] = 'en';
 }
-*/
+

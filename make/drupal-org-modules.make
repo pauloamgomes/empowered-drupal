@@ -12,7 +12,7 @@ projects[context][version] = "3.6"
 
 projects[date][version] = "2.8"
 
-projects[features][version] = "2.4"
+projects[features][version] = "2.5"
 
 projects[feeds][version] = "2.0-alpha8"
 
@@ -74,7 +74,7 @@ projects[ckeditor][version] = "1.16"
 
 projects[jquery_update][version] = "2.5"
 
-projects[views][version] = "3.10"
+projects[views][version] = "3.11"
 
 projects[views_litepager][version] = "3.0"
 

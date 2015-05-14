@@ -3,6 +3,7 @@
 /**
  * @file
  * Enables modules and site configuration for a Empowered site installation.
+ * @author Paulo Gomes <pauloamgomes@gmai.com>
  */
 
 /**

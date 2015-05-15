@@ -92,38 +92,4 @@ function empowered_install_tasks_alter(&$tasks, $install_state) {
   $tasks['install_select_locale']['display'] = FALSE;
   $tasks['install_select_locale']['run'] = INSTALL_TASK_SKIP;
   $install_state['parameters']['locale'] = 'en';
-
-  //$tasks['install_import_locales']['function'] = 'empowered_install_import_locales';
-}
-
-function empowered_install_import_locales(&$install_state) {
-  include_once DRUPAL_ROOT . '/includes/locale.inc';
-  $install_locale = $install_state ['parameters']['locale'];
-
-  include_once DRUPAL_ROOT . '/includes/iso.inc';
-  $predefined = _locale_get_predefined_list();
-  if (!isset($predefined [$install_locale])) {
-    // Drupal does not know about this language, so we prefill its values with
-    // our best guess. The user will be able to edit afterwards.
-    locale_add_language($install_locale, $install_locale, $install_locale, LANGUAGE_LTR, '', '', TRUE, TRUE);
-  }
-  else {
-    // A known predefined language, details will be filled in properly.
-    locale_add_language($install_locale, NULL, NULL, NULL, '', '', TRUE, TRUE);
-  }
-
-  // Collect files to import for this language.
-  $batch = locale_batch_by_language($install_locale, NULL);
-
-  foreach (variable_get('empowered_translations', array()) as $translation) {
-    $extra_locale = strtolower($translation);
-    locale_add_language($extra_locale);
-    $tasks += locale_batch_by_language($extra_locale, NULL);
-  }
-
-  if (!empty($batch)) {
-    // Remember components we cover in this batch set.
-    variable_set('install_locale_batch_components', $batch ['#components']);
-    return $batch;
-  }
 }

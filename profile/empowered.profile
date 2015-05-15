@@ -143,7 +143,6 @@ function empowered_set_translations() {
 
   if ($translations = variable_get('empowered_translations', array())) {
     $translations = array_filter($translations);
-    watchdog('empowered', 'locales: @locales', array('@locales' => print_r($translations, true)));
     //variable_del('empowered_translations');
     include_once DRUPAL_ROOT . '/includes/locale.inc';
     include_once DRUPAL_ROOT . '/includes/iso.inc';
@@ -168,8 +167,6 @@ function empowered_set_translations() {
     if (!empty($batchs)) {
       $batch = drupal_array_merge_deep_array($batchs);
       // Remember components we cover in this batch set.
-      //watchdog('empowered', 'locales batch: @locales', array('@locales' => print_r($batch, true)));
-      watchdog('empowered', 'batch: @locales', array('@locales' => print_r($batch, true)));
       variable_set('empowered_install_import_locales', $batch['#components']);
       return $batch;
     }

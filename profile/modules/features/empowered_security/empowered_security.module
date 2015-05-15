@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Empowered Security feature.
+ */
+
+include_once 'empowered_security.features.inc';

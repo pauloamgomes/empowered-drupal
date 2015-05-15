@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Empowered Dev Tools feature.
+ */
+
+include_once 'empowered_dev_tools.features.inc';

@@ -4,9 +4,9 @@
 libraries[plupload][directory_name] = "plupload"
 libraries[plupload][type] = "library"
 libraries[plupload][destination] = "libraries"
-;libraries[plupload][patch][] = "http://drupal.org/files/plupload-1_5_6-rm_examples-1903850-5.patch"
+libraries[plupload][patch][] = "https://www.drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-21.patch"
 libraries[plupload][download][type] = "file"
-libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/1.5.6.zip"
+libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
 
 ; Select2
 libraries[select2][type] = "libraries"

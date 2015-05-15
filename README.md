@@ -1,11 +1,10 @@
 # Empowered Distro
 
-This is an Drupal Installation Profile that provides a full Drupal 7.x installation plus a bunch of contrib modules and libraries. Focus was on identifying most critical contrib modules (related to administration, content editing, security and user interface).
-
+Empowered is a simple Drupal Distro based on contributed modules and custom configurations (in form of features). Main objective is to improve the initial phase of collecting and configuring a Drupal installation. 
 
 ## Building
 
-Building the distro from scratch will require Drush (6+)
+Building the distro from scratch will require Drush (6+) and consist on below commands:
 
 ```shell
 # Get the codebase
@@ -16,6 +15,12 @@ drush make --prepare-install make/build-empowered.make /webroot
 
 # Copy the installation profile to your profiles directory
 cp -r empowered /webroot/profiles
+```
+
+The build script automates some of the steps, just run it and you are ready to go:
+
+```shell
+./build.sh <webroot>
 ```
 
 ## Installation

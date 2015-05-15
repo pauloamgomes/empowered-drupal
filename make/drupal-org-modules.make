@@ -96,33 +96,35 @@ projects[l10n_update][version] = "2.0"
 
 projects[select2][version] = "1.x-dev"
 
-projects[elysia_cron][version] = 2.1
+projects[elysia_cron][version] = "2.1"
 
-projects[imageapi_optimize][version] = 1.2
+projects[imageapi_optimize][version] = "1.2"
 
-projects[panels][version] = 3.5
+projects[panels][version] = "3.5"
 
-projects[panelizer][version] = 3.1
+projects[panelizer][version] = "3.1"
 
-projects[bean][version] = 1.9
+projects[bean][version] = "1.9"
 
-projects[image_link_formatter][version] = 1.0
+projects[image_link_formatter][version] = "1.0"
 
-projects[search_api][version] = 1.14
+projects[search_api][version] = "1.14"
 
-projects[feeds_tamper][version] = 1.0
+projects[feeds_tamper][version] = "1.0"
 
-projects[globalredirect][version] = 1.5
+projects[globalredirect][version] = "1.5"
 
-projects[redirect][version] = 1.0-rc1
+projects[redirect][version] = "1.0-rc1"
 
-projects[rabbit_hole][version] = 2.23
+projects[rabbit_hole][version] = "2.23"
 
-projects[variable][version] = 2.5
+projects[variable][version] = "2.5"
 
-projects[backup_migrate][version] = 3.1
+projects[backup_migrate][version] = "3.1"
 
-projects[advanced_text_formatter][version] = 1.4
+projects[advanced_text_formatter][version] = "1.4"
+
+projects[l10n_update][version] = "1.1"
 
 ; security
 
@@ -173,6 +175,7 @@ projects[devel_contrib][subdir] = "dev"
 projects[search_krumo][version] = "1.6"
 projects[search_krumo][subdir] = "dev"
 
-
+projects[advanced_help][version] = "1.2"
+projects[advanced_help][subdir] = "dev"
 
 

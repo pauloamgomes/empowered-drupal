@@ -47,8 +47,6 @@ dependencies[] = date_context
 dependencies[] = date_popup
 dependencies[] = date_tools
 dependencies[] = date_views
-; Development
-dependencies[] = devel
 ; Feeds
 dependencies[] = feeds
 dependencies[] = feeds_ui
@@ -67,15 +65,12 @@ dependencies[] = htmlmail
 dependencies[] = mailsystem
 ; Media
 dependencies[] = file_entity
-dependencies[] = file_lock
 dependencies[] = media
-dependencies[] = media_internet
 dependencies[] = plupload
 ; Other
 dependencies[] = diff
 dependencies[] = entity
 dependencies[] = entity_token
-dependencies[] = flood_control
 dependencies[] = job_scheduler
 dependencies[] = libraries
 dependencies[] = linkit
@@ -102,9 +97,12 @@ dependencies[] = views_ui
 dependencies[] = xmlsitemap
 ; Features
 dependencies[] = features
+; Localization
+dependencies[] = l10n_update
 ; Empowered features
 dependencies[] = empowered_basic_contents
 dependencies[] = empowered_editing_settings
 dependencies[] = empowered_roles
+dependencies[] = empowered_defaults
 
 

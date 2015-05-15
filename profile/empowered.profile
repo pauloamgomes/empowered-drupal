@@ -71,8 +71,8 @@ if (!function_exists("system_form_install_configure_form_alter")) {
     $form['empowered']['translations'] = array(
       '#type' => 'checkboxes',
       '#title' => st('Additional languages'),
-      '#description' => st('Select additional languages to enable and download contributed interface translations.'),
-      '#options' => array('PT' => st('Portuguese'), 'ES' => st('Spanish'), 'FR' => st('French'), 'DE' => st('German')),
+      '#description' => st('Select additional languages to enable.'),
+      '#options' => array('PT-PT' => st('Portuguese'), 'ES' => st('Spanish')),
       '#multiple' => TRUE,
       '#size' => 10,
     );
@@ -94,7 +94,7 @@ function empowered_extra_features_enable_submit($form_id, &$form_state) {
     }
   }
   if (isset($values['translations'])) {
-    variable_set('empowered_selected_translations', $values['translations']);
+    variable_set('empowered_translations', $values['translations']);
   }
 }
 
@@ -117,42 +117,77 @@ if (!function_exists("system_form_install_select_profile_form_alter")) {
  * Implements hook_install_tasks().
  */
 function empowered_install_tasks() {
-  // Add batch process installing selected additional languages.
-  $tasks['empowered_import_translations'] = array(
-    'display_name' => st('Import translations'),
+  $tasks = array();
+
+  $tasks['empowered_set_translations'] = array(
+    'display_name' => st('Install additional languages'),
+    'display' => TRUE,
+    'type' => 'batch',
+    'run' => INSTALL_TASK_RUN_IF_NOT_COMPLETED,
+  );
+
+  // Add final configurations step.
+  $tasks['empowered_final_configurations'] = array(
+    'display_name' => st('Empowered Configurations'),
+    'display' => FALSE,
     'type' => 'batch',
   );
 
   return $tasks;
 }
 
-/**
- * Installation task callback: creates batch process to enable additional
- * languages and download relevant interface translations.
- */
-function empowered_import_translations() {
-  include_once DRUPAL_ROOT . '/includes/locale.inc';
-  module_load_include('check.inc', 'l10n_update');
-  module_load_include('batch.inc', 'l10n_update');
+function empowered_set_translations() {
+  // Clear all non-error messages that might be set by enabled modules
+  drupal_get_messages('status', TRUE);
+  drupal_get_messages('completed', TRUE);
 
-  if ($translations = variable_get('empowered_selected_translations', array())) {
-    // No need to keep this variable anymore.
-    variable_del('empowered_selected_translations');
-
-    // Prepare batch process to enable languages and download translations.
-    $operations = array();
+  if ($translations = variable_get('empowered_translations', array())) {
+    $translations = array_filter($translations);
+    watchdog('empowered', 'locales: @locales', array('@locales' => print_r($translations, true)));
+    //variable_del('empowered_translations');
+    include_once DRUPAL_ROOT . '/includes/locale.inc';
+    include_once DRUPAL_ROOT . '/includes/iso.inc';
+    $batchs = array();
+    $predefined = _locale_get_predefined_list();
     foreach ($translations as $translation) {
-      locale_add_language(strtolower($translation));
+      $install_locale = strtolower($translation);
+      watchdog('empowered', 'translation code: @code', array('@code' => $install_locale));
+      if (!isset($predefined[$install_locale])) {
+        // Drupal does not know about this language, so we prefill its values with
+        // our best guess. The user will be able to edit afterwards.
+        locale_add_language($install_locale, $install_locale, $install_locale, LANGUAGE_LTR, '', '', TRUE, FALSE);
+      }
+      else {
+        // A known predefined language, details will be filled in properly.
+        locale_add_language($install_locale, NULL, NULL, NULL, '', '', TRUE, FALSE);
+      }
 
-      // Build batch with l10n_update module.
-      $history = l10n_update_get_history();
-      $available = l10n_update_available_releases();
-      $updates = l10n_update_build_updates($history, $available);
-
-      $operations = array_merge($operations, _l10n_update_prepare_updates($updates, NULL, array()));
+      // Collect files to import for this language.
+      $batchs[] = locale_batch_by_language($install_locale, NULL);
     }
-
-    $batch = l10n_update_batch_multiple($operations, LOCALE_IMPORT_KEEP);
-    return $batch;
+    if (!empty($batchs)) {
+      $batch = drupal_array_merge_deep_array($batchs);
+      // Remember components we cover in this batch set.
+      //watchdog('empowered', 'locales batch: @locales', array('@locales' => print_r($batch, true)));
+      watchdog('empowered', 'batch: @locales', array('@locales' => print_r($batch, true)));
+      variable_set('empowered_install_import_locales', $batch['#components']);
+      return $batch;
+    }
   }
+}
+
+function empowered_final_configurations() {
+  drupal_flush_all_caches();
+  // Remember the profile which was used.
+  variable_set('install_profile', drupal_get_profile());
+    // Installation profiles are always loaded last
+  db_update('system')
+    ->fields(array('weight' => 1000))
+    ->condition('type', 'module')
+    ->condition('name', drupal_get_profile())
+    ->execute();
+
+  // Cache a fully-built schema.
+  drupal_get_schema(NULL, TRUE);
+  features_revert();
 }

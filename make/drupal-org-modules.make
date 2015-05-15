@@ -146,7 +146,7 @@ projects[session_limit][subdir] = "security"
 projects[seckit][version] = "1.9"
 projects[seckit][subdir] = "security"
 
-projects[username_enumeration_prevention][version] = "1.0"
+projects[username_enumeration_prevention][version] = "1.1"
 projects[username_enumeration_prevention][subdir] = "security"
 
 projects[securepages][version] = "1.0-beta2"

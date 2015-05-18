@@ -45,6 +45,7 @@ Module | Version
 [email](http://drupal.org/project/email)  | 1.3
 [entityreference](http://drupal.org/project/entityreference)  | 1.1
 [entitycache](http://drupal.org/project/entitycache)  | 1.2
+[multiform](https://www.drupal.org/project/multiform) | 1.1
 [field_group](http://drupal.org/project/field_group)  | 1.4
 [field_group_multiple](http://drupal.org/project/field_group_multiple)  | 1.0-beta3
 [field_validation](http://drupal.org/project/field_validation)  | 2.4

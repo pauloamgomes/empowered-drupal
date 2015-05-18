@@ -51,8 +51,9 @@ function _empowered_set_misc_settings() {
   // Don't display date and author information for "Page" nodes by default.
   variable_set('node_submitted_page', FALSE);
 
-  // Set jQuery version to 1.7
+  // Set jQuery version to 1.7 and to 1.5 on admin theme
   variable_set('jquery_update_jquery_version', '1.7');
+  variable_set('jquery_update_jquery_admin_version', '1.5');
 
   // Enable clean urls.
   variable_set('clean_url', 1);

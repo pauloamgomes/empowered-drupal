@@ -36,6 +36,8 @@ projects[mailsystem][version] = "2.34"
 
 projects[file_lock][version] = "2.0"
 
+projects[multiform][version] = "1.1"
+
 projects[media][version] = "1.5"
 
 projects[media_youtube][version] = "2.0-rc5"

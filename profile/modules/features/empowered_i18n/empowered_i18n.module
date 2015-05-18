@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Empowered i18n feature.
+ */
+
+include_once 'empowered_i18n.features.inc';

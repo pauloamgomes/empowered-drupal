@@ -94,7 +94,12 @@ function empowered_extra_features_enable_submit($form_id, &$form_state) {
     }
   }
   if (isset($values['translations'])) {
-    variable_set('empowered_translations', $values['translations']);
+    $translations = array_filter($values['translations']);
+    if (!empty($translations)) {
+      variable_set('empowered_translations', $translations);
+      // Enable the i18n dependencies
+      module_enable(array('empowered_i18n', TRUE));
+    }
   }
 }
 

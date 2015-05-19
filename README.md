@@ -1,5 +1,7 @@
 # Empowered Distro
 
+![empowered logo](https://raw.githubusercontent.com/pauloamgomes/empowered-drupal/master/profile/empowered.png)
+
 Empowered is a simple Drupal Distro based on contributed modules and custom configurations (in form of features). Main objective is to improve the initial phase of collecting and configuring a Drupal installation. 
 
 ## Building

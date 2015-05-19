@@ -30,7 +30,7 @@ The build script automates some of the steps, just run it and you are ready to g
 Installation can be executed directly from drupal's default installer or using drush:
 
 ```shell
-drush site-install empowered_profile --db-url="mysql://DB_USER:DB_PASS@locahost/DBNAME"
+drush site-install empowered --db-url="mysql://DB_USER:DB_PASS@locahost/DBNAME"
 ```
 
 ## Contrib modules

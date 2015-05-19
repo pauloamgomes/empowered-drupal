@@ -18,13 +18,39 @@ check_args () {
 
 check_args $@
 
-echo ' ___                                       _'
-echo '| __|_ __  _ __  _____ __ _____ _ _ ___ __| |'
-echo '| _|| `  \| `_ \/ _ \ V  V / -_) `_/ -_) _` |'
-echo '|___|_|_|_| .__/\___/\_/\_/\___|_| \___\__,_|'
-echo '            |_|'
-echo
-echo
+echo '                                                             '
+echo '                                     .                       '
+echo '                                   `,                        '
+echo '                                  ,,                         '
+echo '                                `,,                          '
+echo '                               .,,,`                         '
+echo '                              .,,,,,,.                       '
+echo '                                 ,,.                         '
+echo '                                ,,                           '
+echo '                               ,.                            '
+echo '                              ,                              '
+echo '                             `                               '
+echo '                                                             '
+echo '                            +:                               '
+echo '                              @                              '
+echo '                          +    .#                            '
+echo '                         `       #:                          '
+echo '                        : ,@@+;+  @`                         '
+echo '                       + .@@    :  @                         '
+echo '                       ` @@      ` @#                        '
+echo '                         @#++++++: @@                        '
+echo '                                   @@                        '
+echo '                         @@@@@@@@@@@@                        '
+echo '                         @`                                  '
+echo '                       ; ;@      ;                           '
+echo '                       .  @`    ` +`                         '
+echo '                        #  .#;#,  @@`                        '
+echo '                         `       @@.                         '
+echo '                           ,@@@@@@                           '
+echo '                                                             '
+echo '                                                             '
+echo '                                                             '
+
 
 echo "Building on $1 ..."
 echo

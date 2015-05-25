@@ -77,7 +77,7 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\',\'Maximize\',\'Format\',\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\']
+    [\'Source\',\'Maximize\',\'Format\',\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\',\'Enhanced Image\']
 ]',
         'expand' => 't',
         'default' => 't',

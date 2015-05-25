@@ -13,14 +13,14 @@ function empowered_editing_settings_default_linkit_profiles() {
   $linkit_profile = new LinkitProfile();
   $linkit_profile->disabled = FALSE; /* Edit this to true to make a default linkit_profile disabled initially */
   $linkit_profile->api_version = 1;
-  $linkit_profile->name = 'internal_content';
-  $linkit_profile->admin_title = 'Internal Content';
+  $linkit_profile->name = 'link_content';
+  $linkit_profile->admin_title = 'Link Content';
   $linkit_profile->admin_description = '';
   $linkit_profile->profile_type = '1';
   $linkit_profile->data = array(
     'text_formats' => array(
-      'html' => 'html',
       'rich_text' => 'rich_text',
+      'html' => 0,
       'plain_text' => 0,
     ),
     'search_plugins' => array(
@@ -81,7 +81,7 @@ function empowered_editing_settings_default_linkit_profiles() {
         'weight' => '-10',
       ),
       'class' => array(
-        'enabled' => 0,
+        'enabled' => 1,
         'weight' => '-10',
       ),
       'id' => array(
@@ -103,7 +103,7 @@ function empowered_editing_settings_default_linkit_profiles() {
       'remoteTimeout' => '10000',
     ),
   );
-  $export['internal_content'] = $linkit_profile;
+  $export['link_content'] = $linkit_profile;
 
   return $export;
 }

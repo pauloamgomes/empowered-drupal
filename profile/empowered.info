@@ -71,6 +71,8 @@ dependencies[] = mailsystem
 dependencies[] = file_entity
 dependencies[] = media
 dependencies[] = plupload
+dependencies[] = media_browser_plus
+dependencies[] = media_bulk_upload
 ; Other
 dependencies[] = diff
 dependencies[] = entity

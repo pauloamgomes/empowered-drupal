@@ -98,7 +98,7 @@ projects[xmlsitemap][version] = "2.2"
 
 projects[fences][version] = "1.0"
 
-projects[i18n][version] = "1.12"
+projects[i18n][version] = "1.13"
 
 projects[i18nviews][version] = "3.x-dev"
 

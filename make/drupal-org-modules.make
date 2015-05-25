@@ -38,15 +38,23 @@ projects[file_lock][version] = "2.0"
 
 projects[multiform][version] = "1.1"
 
-projects[media][version] = "1.5"
+projects[media][version] = "2.x-dev"
+
+projects[media_browser_plus][version] = "3.x-dev"
+
+projects[views_tree][version] = "2.x-dev"
 
 projects[media_youtube][version] = "2.0-rc5"
+
+projects[file_entity][version] = "2.x-dev"
 
 projects[plupload][version] = "1.7"
 
 projects[diff][version] = "3.2"
 
 projects[entity][version] = "1.6"
+
+projects[entity_embed][version] = "1.x-dev"
 
 projects[job_scheduler][version] = "2.0-alpha3"
 
@@ -72,7 +80,7 @@ projects[rules][version] = "2.9"
 
 projects[uuid][version] = "1.0-alpha6"
 
-projects[ckeditor][version] = "1.16"
+projects[ckeditor][version] = "1.x-dev"
 
 projects[jquery_update][version] = "2.5"
 

@@ -64,7 +64,7 @@ echo
 cp -r profile $1/profiles/empowered || exit_error "Error on copying profile to $1/profiles/empowered"
 cd $1
 cp sites/default/default.settings.php sites/default/settings.php
-chmod 664 sites/default/settings.php
+chmod 0666 sites/default/settings.php
 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Almost done! Just perform below steps"

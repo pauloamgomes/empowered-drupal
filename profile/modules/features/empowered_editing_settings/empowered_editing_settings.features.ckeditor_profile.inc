@@ -77,7 +77,7 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\',\'Maximize\',\'Format\',\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'Image\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\']
+    [\'Source\',\'Maximize\',\'Format\',\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -119,6 +119,42 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
         'theme_config_js' => 'f',
         'js_conf' => '',
         'loadPlugins' => array(
+          'drupalbreaks' => array(
+            'name' => 'drupalbreaks',
+            'desc' => 'Plugin for inserting Drupal teaser and page breaks.',
+            'path' => '%plugin_dir%drupalbreaks/',
+            'buttons' => array(
+              'DrupalBreak' => array(
+                'label' => 'DrupalBreak',
+                'icon' => 'images/drupalbreak.png',
+              ),
+            ),
+            'default' => 't',
+          ),
+          'drupalentity' => array(
+            'name' => 'drupalentity',
+            'desc' => 'Plugin for embedding entities',
+            'path' => '/sites/all/modules/contrib/entity_embed/js/plugins/drupalentity/',
+            'default' => 'f',
+            'buttons' => array(
+              'node' => array(
+                'label' => 'Content',
+                'icon' => 'entity.png',
+              ),
+            ),
+          ),
+          'image2' => array(
+            'name' => 'image2',
+            'desc' => 'Enhanced Image plugin. See <a href="http://ckeditor.com/addon/image2">addon page</a> for more details.',
+            'path' => '//cdn.ckeditor.com/4.4.3/full-all/plugins/image2/',
+            'buttons' => array(
+              'Enhanced Image' => array(
+                'icon' => 'icons/image.png',
+                'label' => 'Insert Enhanced Image',
+              ),
+            ),
+            'default' => 't',
+          ),
           'linkit' => array(
             'name' => 'linkit',
             'desc' => 'Support for Linkit module',
@@ -133,18 +169,18 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
           'media' => array(
             'name' => 'media',
             'desc' => 'Plugin for inserting images from Drupal media module',
-            'path' => '%plugin_dir%media/',
+            'path' => '/sites/all/modules/contrib/media/modules/media_wysiwyg/wysiwyg_plugins/media_ckeditor/',
             'buttons' => array(
               'Media' => array(
-                'label' => 'Media',
                 'icon' => 'images/icon.gif',
+                'label' => 'Add media',
               ),
             ),
             'default' => 'f',
           ),
           'mediaembed' => array(
             'name' => 'mediaembed',
-            'desc' => 'Plugin for inserting Drupal embeded media',
+            'desc' => 'Plugin for embedding HTML snippets',
             'path' => '%plugin_dir%mediaembed/',
             'buttons' => array(
               'MediaEmbed' => array(

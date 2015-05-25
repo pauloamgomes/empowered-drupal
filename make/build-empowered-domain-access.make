@@ -1,5 +1,7 @@
 ; empowered make file for including domain access usage:
-
+api = 2
+core = 7.x
+projects[drupal][type] = core
 ; Include the definition for how to build empowered:
 includes[] = build-empowered.make
 

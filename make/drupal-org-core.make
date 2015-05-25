@@ -29,6 +29,10 @@ projects[drupal][patch][] = "http://drupal.org/files/issues/drupal-2289493-3-ima
 ; http://drupal.org/node/2400287
 projects[drupal][patch][] = "http://drupal.org/files/issues/Issue-2400287-by-hass-Remove-JS-source-and-source-map-D7_0.patch"
 
+; Patch ckeditor when using media 2.x (Remove JS helper functions) - not required on dev branch
+; https://www.drupal.org/node/2454933#comment-9737591
+;projects[ckeditor][patch][] = https://www.drupal.org/files/issues/Issue_2454933.patch
+
 ; +++++ Settings +++++
 
 defaults[projects][subdir] = "contrib"

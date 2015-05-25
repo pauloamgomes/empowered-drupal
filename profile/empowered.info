@@ -1,7 +1,7 @@
 ; Packaging information for empowered
 name = "Empowered"
 description = ""
-exclusive = "0"
+exclusive = "1"
 core = "7.x"
 ; ----------
 ; Dependencies
@@ -40,6 +40,10 @@ dependencies[] = module_filter
 dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels
+dependencies[] = panels_ipe
+dependencies[] = ctools_custom_content
+dependencies[] = views_content
+dependencies[] = panelizer
 ; Date/Time
 dependencies[] = date
 dependencies[] = date_api

@@ -152,5 +152,12 @@ function empowered_editing_settings_strongarm() {
   $strongarm->value = '';
   $export['media_wysiwyg_wysiwyg_upload_directory'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'page_manager_node_edit_disabled';
+  $strongarm->value = FALSE;
+  $export['page_manager_node_edit_disabled'] = $strongarm;
+
   return $export;
 }

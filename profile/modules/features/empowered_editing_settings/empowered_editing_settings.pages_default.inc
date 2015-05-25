@@ -56,21 +56,23 @@ function empowered_editing_settings_default_page_manager_handlers() {
         'contains' => 'region',
         'children' => array(
           0 => 'center',
-          1 => 'node_edit_options',
+          1 => 'middle',
         ),
         'parent' => 'main',
       ),
       'center' => array(
         'type' => 'region',
-        'title' => 'Center',
-        'width' => '64.93228662738468',
+        'title' => 'Node',
+        'width' => '59.538761158319446',
         'width_type' => '%',
         'parent' => 'main-row',
+        'class' => '',
+        'hide_empty' => 0,
       ),
-      'node_edit_options' => array(
+      'middle' => array(
         'type' => 'region',
-        'title' => 'Node Edit Options',
-        'width' => '35.067713372615316',
+        'title' => 'Sidebar',
+        'width' => '29.918544572759103',
         'width_type' => '%',
         'parent' => 'main-row',
         'class' => '',
@@ -83,6 +85,7 @@ function empowered_editing_settings_default_page_manager_handlers() {
       'default' => NULL,
       'center' => NULL,
       'node_edit_options' => NULL,
+      'middle' => NULL,
     ),
   );
   $display->cache = array();
@@ -188,7 +191,7 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $display->panels['center'][3] = 'new-399c3d19-c0ac-422a-b4cb-086af035d26b';
     $pane = new stdClass();
     $pane->pid = 'new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
-    $pane->panel = 'node_edit_options';
+    $pane->panel = 'middle';
     $pane->type = 'node_form_author';
     $pane->subtype = 'node_form_author';
     $pane->shown = TRUE;
@@ -222,10 +225,10 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $pane->locks = array();
     $pane->uuid = 'c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
     $display->content['new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a'] = $pane;
-    $display->panels['node_edit_options'][0] = 'new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
+    $display->panels['middle'][0] = 'new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
     $pane = new stdClass();
     $pane->pid = 'new-88d5d847-9358-4f54-bcbe-dd75c2291214';
-    $pane->panel = 'node_edit_options';
+    $pane->panel = 'middle';
     $pane->type = 'node_form_menu';
     $pane->subtype = 'node_form_menu';
     $pane->shown = TRUE;
@@ -246,10 +249,10 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $pane->locks = array();
     $pane->uuid = '88d5d847-9358-4f54-bcbe-dd75c2291214';
     $display->content['new-88d5d847-9358-4f54-bcbe-dd75c2291214'] = $pane;
-    $display->panels['node_edit_options'][1] = 'new-88d5d847-9358-4f54-bcbe-dd75c2291214';
+    $display->panels['middle'][1] = 'new-88d5d847-9358-4f54-bcbe-dd75c2291214';
     $pane = new stdClass();
     $pane->pid = 'new-353b6999-e74f-46a5-87b6-f807a2053ccb';
-    $pane->panel = 'node_edit_options';
+    $pane->panel = 'middle';
     $pane->type = 'node_form_log';
     $pane->subtype = 'node_form_log';
     $pane->shown = TRUE;
@@ -272,10 +275,10 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $pane->locks = array();
     $pane->uuid = '353b6999-e74f-46a5-87b6-f807a2053ccb';
     $display->content['new-353b6999-e74f-46a5-87b6-f807a2053ccb'] = $pane;
-    $display->panels['node_edit_options'][2] = 'new-353b6999-e74f-46a5-87b6-f807a2053ccb';
+    $display->panels['middle'][2] = 'new-353b6999-e74f-46a5-87b6-f807a2053ccb';
     $pane = new stdClass();
     $pane->pid = 'new-d2469b80-882a-4e5c-9e6a-5de2f6cd4979';
-    $pane->panel = 'node_edit_options';
+    $pane->panel = 'middle';
     $pane->type = 'node_form_path';
     $pane->subtype = 'node_form_path';
     $pane->shown = TRUE;
@@ -296,10 +299,10 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $pane->locks = array();
     $pane->uuid = 'd2469b80-882a-4e5c-9e6a-5de2f6cd4979';
     $display->content['new-d2469b80-882a-4e5c-9e6a-5de2f6cd4979'] = $pane;
-    $display->panels['node_edit_options'][3] = 'new-d2469b80-882a-4e5c-9e6a-5de2f6cd4979';
+    $display->panels['middle'][3] = 'new-d2469b80-882a-4e5c-9e6a-5de2f6cd4979';
     $pane = new stdClass();
     $pane->pid = 'new-125ca3de-232c-49ab-b6e9-0cd4d5f56473';
-    $pane->panel = 'node_edit_options';
+    $pane->panel = 'middle';
     $pane->type = 'node_form_buttons';
     $pane->subtype = 'node_form_buttons';
     $pane->shown = TRUE;
@@ -320,7 +323,7 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $pane->locks = array();
     $pane->uuid = '125ca3de-232c-49ab-b6e9-0cd4d5f56473';
     $display->content['new-125ca3de-232c-49ab-b6e9-0cd4d5f56473'] = $pane;
-    $display->panels['node_edit_options'][4] = 'new-125ca3de-232c-49ab-b6e9-0cd4d5f56473';
+    $display->panels['middle'][4] = 'new-125ca3de-232c-49ab-b6e9-0cd4d5f56473';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-881b251d-3e59-4142-b7ae-c6ee908a104e';
   $handler->conf['display'] = $display;

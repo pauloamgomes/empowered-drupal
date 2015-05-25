@@ -14,10 +14,20 @@ function empowered_editing_settings_filter_default_formats() {
   $formats['html'] = array(
     'format' => 'html',
     'name' => 'HTML',
-    'cache' => 1,
+    'cache' => 0,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -9,
     'filters' => array(
+      'entity_embed' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'filter_align' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(),
+      ),
       'filter_url' => array(
         'weight' => 0,
         'status' => 1,
@@ -39,7 +49,7 @@ function empowered_editing_settings_filter_default_formats() {
     'name' => 'Plain text',
     'cache' => 1,
     'status' => 1,
-    'weight' => 10,
+    'weight' => -8,
     'filters' => array(
       'filter_html_escape' => array(
         'weight' => 0,
@@ -67,7 +77,7 @@ function empowered_editing_settings_filter_default_formats() {
     'name' => 'Rich Text',
     'cache' => 0,
     'status' => 1,
-    'weight' => 0,
+    'weight' => -10,
     'filters' => array(
       'filter_align' => array(
         'weight' => -48,

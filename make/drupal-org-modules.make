@@ -112,6 +112,8 @@ projects[imageapi_optimize][version] = "1.2"
 
 projects[panels][version] = "3.5"
 
+projects[panels_accordion][version] = "1.0"
+
 projects[panelizer][version] = "3.1"
 
 projects[bean][version] = "1.9"

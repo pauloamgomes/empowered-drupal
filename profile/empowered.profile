@@ -98,7 +98,7 @@ function empowered_extra_features_enable_submit($form_id, &$form_state) {
     if (!empty($translations)) {
       variable_set('empowered_translations', $translations);
       // Enable the i18n dependencies
-      module_enable(array('empowered_i18n', TRUE));
+      module_enable(array('empowered_i18n'), TRUE);
     }
   }
 }

@@ -68,7 +68,16 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
     'CKEditor Global Profile' => array(
       'name' => 'CKEditor Global Profile',
       'settings' => array(
-        'ckeditor_path' => '//cdn.ckeditor.com/4.4.3/full-all',
+        'skin' => 'bootstrapck',
+        'ckeditor_path' => '%l/ckeditor',
+        'ckeditor_local_path' => '',
+        'ckeditor_plugins_path' => '%m/plugins',
+        'ckeditor_plugins_local_path' => '',
+        'ckfinder_path' => '%m/ckfinder',
+        'ckfinder_local_path' => '',
+        'ckeditor_aggregate' => 'f',
+        'toolbar_wizard' => 't',
+        'loadPlugins' => array(),
       ),
       'input_formats' => array(),
     ),
@@ -77,7 +86,7 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Source\',\'Maximize\',\'Format\',\'Bold\',\'Italic\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\',\'Enhanced Image\']
+    [\'Maximize\',\'Source\',\'ShowBlocks\',\'Format\',\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'Superscript\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\',\'Flash\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -143,18 +152,6 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
               ),
             ),
           ),
-          'image2' => array(
-            'name' => 'image2',
-            'desc' => 'Enhanced Image plugin. See <a href="http://ckeditor.com/addon/image2">addon page</a> for more details.',
-            'path' => '//cdn.ckeditor.com/4.4.3/full-all/plugins/image2/',
-            'buttons' => array(
-              'Enhanced Image' => array(
-                'icon' => 'icons/image.png',
-                'label' => 'Insert Enhanced Image',
-              ),
-            ),
-            'default' => 't',
-          ),
           'linkit' => array(
             'name' => 'linkit',
             'desc' => 'Support for Linkit module',
@@ -189,13 +186,6 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
               ),
             ),
             'default' => 'f',
-          ),
-          'tableresize' => array(
-            'name' => 'tableresize',
-            'desc' => 'Table Resize plugin. See <a href="http://ckeditor.com/addon/tableresize">addon page</a> for more details.',
-            'path' => '//cdn.ckeditor.com/4.4.3/full-all/plugins/tableresize/',
-            'buttons' => FALSE,
-            'default' => 't',
           ),
         ),
       ),

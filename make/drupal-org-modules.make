@@ -146,6 +146,8 @@ projects[advanced_text_formatter][version] = "1.4"
 
 projects[l10n_update][version] = "1.1"
 
+projects[speedy][version] = "1.18"
+
 ; security
 
 projects[flood_control][version] = "1.0"

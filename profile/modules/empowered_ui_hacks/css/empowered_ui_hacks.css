@@ -1,0 +1,14 @@
+.text-format-wrapper > fieldset > legend {
+  height: 1.1em;
+  font-size: .9em !important;
+  font-weight: normal !important;
+}
+
+.text-format-wrapper > fieldset > .fieldset-wrapper {
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.text-format-wrapper > fieldset > .fieldset-wrapper .form-type-select label {
+  display: none;
+}

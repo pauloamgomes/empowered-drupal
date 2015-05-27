@@ -1,0 +1,7 @@
+name = Empowered UI Hacks
+description = Extension to apply a bunch of refinements/hacks on Drupal admin pages
+
+package = Empowered
+core = 7.x
+
+

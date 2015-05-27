@@ -138,6 +138,9 @@ function empowered_install_tasks() {
     'type' => 'batch',
   );
 
+  // Add terms to media-root
+  //http://data.agaric.com/create-vocabulary-and-taxonomy-terms-installation-profile
+
   return $tasks;
 }
 

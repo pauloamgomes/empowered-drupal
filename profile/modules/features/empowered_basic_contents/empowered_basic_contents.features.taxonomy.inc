@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * empowered_editing_settings.features.taxonomy.inc
+ * empowered_basic_contents.features.taxonomy.inc
  */
 
 /**
  * Implements hook_taxonomy_default_vocabularies().
  */
-function empowered_editing_settings_taxonomy_default_vocabularies() {
+function empowered_basic_contents_taxonomy_default_vocabularies() {
   return array(
     'media_folders' => array(
       'name' => 'Media Folders',

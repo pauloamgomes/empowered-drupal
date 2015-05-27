@@ -8,12 +8,12 @@ libraries[plupload][patch][] = "https://www.drupal.org/files/issues/plupload-1_5
 libraries[plupload][download][type] = "file"
 libraries[plupload][download][url] = "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
 
-; Select2
-libraries[select2][type] = "libraries"
-libraries[select2][download][type] = "file"
-libraries[select2][download][url] = "https://github.com/ivaynberg/select2/archive/3.4.5.zip"
-libraries[select2][directory_name] = "select2"
-libraries[select2][destination] = "libraries"
+; jquery ui multiselect widget
+libraries[multiselect][type] = "libraries"
+libraries[multiselect][download][type] = "file"
+libraries[multiselect][download][url] = "https://github.com/ehynds/jquery-ui-multiselect-widget/archive/1.13.zip"
+libraries[multiselect][directory_name] = "jquery-ui-multiselect-widget"
+libraries[multiselect][destination] = "libraries"
 
 ; imagesloaded - dependency for manual crop
 libraries[imagesloaded][type] = "libraries"

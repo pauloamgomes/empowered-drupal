@@ -180,26 +180,15 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $display->content['new-332eb0fa-b81d-4407-974b-53251fa3c529'] = $pane;
     $display->panels['middle'][0] = 'new-332eb0fa-b81d-4407-974b-53251fa3c529';
     $pane = new stdClass();
-    $pane->pid = 'new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
+    $pane->pid = 'new-8694232c-1ef2-4137-b79f-81300c2f331d';
     $pane->panel = 'middle';
-    $pane->type = 'node_form_author';
-    $pane->subtype = 'node_form_author';
+    $pane->type = 'entity_form_field';
+    $pane->subtype = 'node:field_tag';
     $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'role',
-          'settings' => array(
-            'rids' => array(
-              0 => 4,
-            ),
-          ),
-          'context' => 'logged-in-user',
-          'not' => FALSE,
-        ),
-      ),
-    );
+    $pane->access = array();
     $pane->configuration = array(
+      'label' => '',
+      'formatter' => '',
       'context' => 'argument_node_edit_1',
       'override_title' => 0,
       'override_title_text' => '',
@@ -213,9 +202,9 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $pane->uuid = 'c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
-    $display->content['new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a'] = $pane;
-    $display->panels['middle'][1] = 'new-c34b5fd6-5b0f-47b6-bd82-e3c7fd000d1a';
+    $pane->uuid = '8694232c-1ef2-4137-b79f-81300c2f331d';
+    $display->content['new-8694232c-1ef2-4137-b79f-81300c2f331d'] = $pane;
+    $display->panels['middle'][1] = 'new-8694232c-1ef2-4137-b79f-81300c2f331d';
     $pane = new stdClass();
     $pane->pid = 'new-88d5d847-9358-4f54-bcbe-dd75c2291214';
     $pane->panel = 'middle';
@@ -291,6 +280,30 @@ function empowered_editing_settings_default_page_manager_handlers() {
     $display->content['new-d2469b80-882a-4e5c-9e6a-5de2f6cd4979'] = $pane;
     $display->panels['middle'][4] = 'new-d2469b80-882a-4e5c-9e6a-5de2f6cd4979';
     $pane = new stdClass();
+    $pane->pid = 'new-85ef00b8-9d8f-4114-a62a-c8354179e93d';
+    $pane->panel = 'middle';
+    $pane->type = 'node_form_author';
+    $pane->subtype = 'node_form_author';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_node_edit_1',
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '85ef00b8-9d8f-4114-a62a-c8354179e93d';
+    $display->content['new-85ef00b8-9d8f-4114-a62a-c8354179e93d'] = $pane;
+    $display->panels['middle'][5] = 'new-85ef00b8-9d8f-4114-a62a-c8354179e93d';
+    $pane = new stdClass();
     $pane->pid = 'new-399c3d19-c0ac-422a-b4cb-086af035d26b';
     $pane->panel = 'middle';
     $pane->type = 'node_form_publishing';
@@ -309,11 +322,11 @@ function empowered_editing_settings_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 5;
+    $pane->position = 6;
     $pane->locks = array();
     $pane->uuid = '399c3d19-c0ac-422a-b4cb-086af035d26b';
     $display->content['new-399c3d19-c0ac-422a-b4cb-086af035d26b'] = $pane;
-    $display->panels['middle'][5] = 'new-399c3d19-c0ac-422a-b4cb-086af035d26b';
+    $display->panels['middle'][6] = 'new-399c3d19-c0ac-422a-b4cb-086af035d26b';
     $pane = new stdClass();
     $pane->pid = 'new-125ca3de-232c-49ab-b6e9-0cd4d5f56473';
     $pane->panel = 'middle';
@@ -333,11 +346,11 @@ function empowered_editing_settings_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 6;
+    $pane->position = 7;
     $pane->locks = array();
     $pane->uuid = '125ca3de-232c-49ab-b6e9-0cd4d5f56473';
     $display->content['new-125ca3de-232c-49ab-b6e9-0cd4d5f56473'] = $pane;
-    $display->panels['middle'][6] = 'new-125ca3de-232c-49ab-b6e9-0cd4d5f56473';
+    $display->panels['middle'][7] = 'new-125ca3de-232c-49ab-b6e9-0cd4d5f56473';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-881b251d-3e59-4142-b7ae-c6ee908a104e';
   $handler->conf['display'] = $display;

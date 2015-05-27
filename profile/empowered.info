@@ -103,6 +103,7 @@ dependencies[] = views_ui
 dependencies[] = xmlsitemap
 ; Features
 dependencies[] = features
+dependencies[] = features_roles_permissions
 ; Localization
 dependencies[] = l10n_update
 ; Empowered features

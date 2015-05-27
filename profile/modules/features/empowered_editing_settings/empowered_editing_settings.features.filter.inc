@@ -80,34 +80,39 @@ function empowered_editing_settings_filter_default_formats() {
     'weight' => -10,
     'filters' => array(
       'filter_align' => array(
-        'weight' => -48,
+        'weight' => -50,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_autop' => array(
-        'weight' => -47,
+        'weight' => -49,
+        'status' => 1,
+        'settings' => array(),
+      ),
+      'wysiwyg_template_cleanup' => array(
+        'weight' => -48,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_url' => array(
-        'weight' => -46,
+        'weight' => -47,
         'status' => 1,
         'settings' => array(
           'filter_url_length' => 72,
         ),
       ),
       'media_filter' => array(
-        'weight' => -44,
+        'weight' => -46,
         'status' => 1,
         'settings' => array(),
       ),
       'filter_htmlcorrector' => array(
-        'weight' => -43,
+        'weight' => -45,
         'status' => 1,
         'settings' => array(),
       ),
       'entity_embed' => array(
-        'weight' => -42,
+        'weight' => -44,
         'status' => 1,
         'settings' => array(),
       ),

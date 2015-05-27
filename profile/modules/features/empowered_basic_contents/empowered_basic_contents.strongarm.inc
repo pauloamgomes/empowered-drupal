@@ -46,6 +46,9 @@ function empowered_basic_contents_strongarm() {
         'path' => array(
           'weight' => '30',
         ),
+        'language' => array(
+          'weight' => '0',
+        ),
       ),
       'display' => array(
         'language' => array(

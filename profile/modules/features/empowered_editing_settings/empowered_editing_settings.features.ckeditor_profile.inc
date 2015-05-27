@@ -86,7 +86,7 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
       'settings' => array(
         'ss' => 2,
         'toolbar' => '[
-    [\'Maximize\',\'Source\',\'ShowBlocks\',\'Format\',\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'Superscript\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\',\'Flash\']
+    [\'Maximize\',\'Source\',\'ShowBlocks\',\'PasteText\',\'Templates\',\'Format\',\'Bold\',\'Italic\',\'Underline\',\'Strike\',\'Superscript\',\'-\',\'NumberedList\',\'BulletedList\',\'-\',\'Link\',\'Unlink\',\'linkit\',\'RemoveFormat\',\'Table\',\'Media\',\'MediaEmbed\',\'node\',\'Flash\',\'TokenInsert\']
 ]',
         'expand' => 't',
         'default' => 't',
@@ -186,6 +186,17 @@ function empowered_editing_settings_ckeditor_profile_defaults() {
               ),
             ),
             'default' => 'f',
+          ),
+          'token_insert_ckeditor' => array(
+            'name' => 'token_insert_ckeditor',
+            'desc' => 'Token insert',
+            'path' => '%base_path%sites/all/modules/contrib/token_insert/token_insert_ckeditor/plugins/token_insert_ckeditor/',
+            'buttons' => array(
+              'TokenInsert' => array(
+                'icon' => 'images/insert.png',
+                'label' => 'Token insert',
+              ),
+            ),
           ),
         ),
       ),

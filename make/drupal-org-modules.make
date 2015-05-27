@@ -14,6 +14,10 @@ projects[date][version] = "2.8"
 
 projects[features][version] = "2.5"
 
+projects[features_roles_permissions][version] = "1.2"
+
+projects[uuid_features][version] = "1.0-alpha4"
+
 projects[feeds][version] = "2.0-alpha8"
 
 projects[email][version] = "1.3"
@@ -37,6 +41,8 @@ projects[mailsystem][version] = "2.34"
 projects[file_lock][version] = "2.0"
 
 projects[multiform][version] = "1.1"
+
+projects[jquery_ui_multiselect_widget][version] = "1.12"
 
 projects[media][version] = "2.x-dev"
 
@@ -72,6 +78,8 @@ projects[strongarm][version] = "2.0"
 
 projects[token][version] = "1.6"
 
+projects[token_insert][version] = "2.4"
+
 projects[transliteration][version] = "3.2"
 
 projects[globalredirect][version] = "1.5"
@@ -81,6 +89,8 @@ projects[rules][version] = "2.9"
 projects[uuid][version] = "1.0-alpha6"
 
 projects[ckeditor][version] = "1.x-dev"
+
+projects[wysiwyg_template][version] = "2.x-dev"
 
 projects[jquery_update][version] = "2.5"
 
@@ -103,8 +113,6 @@ projects[i18n][version] = "1.13"
 projects[i18nviews][version] = "3.x-dev"
 
 projects[l10n_update][version] = "2.0"
-
-projects[select2][version] = "1.x-dev"
 
 projects[elysia_cron][version] = "2.1"
 

@@ -208,9 +208,7 @@ function empowered_final_configurations() {
  * Task for creating taxonomies
  */
 function empowered_create_taxonomy() {
-  $operations = array();
-
-  $operations[] = array('_empowered_create_vocabulary_tags');
+  $operations[] = array('_empowered_create_vocabulary_tags', array());
 
   $folders = array(
     st('Pictures'),

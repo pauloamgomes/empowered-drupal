@@ -30,6 +30,8 @@ projects[field_group][version] = "1.4"
 
 projects[field_group_multiple][version] = "1.0-beta3"
 
+projects[field_collection][version] = "1.0-beta8"
+
 projects[field_validation][version] = "2.4"
 
 projects[link][version] = "1.3"

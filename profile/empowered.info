@@ -64,6 +64,7 @@ dependencies[] = field_validation_extras
 dependencies[] = field_validation_ui
 dependencies[] = link
 dependencies[] = advanced_text_formatter
+dependencies[] = field_collection
 ; Mail
 dependencies[] = htmlmail
 dependencies[] = mailsystem

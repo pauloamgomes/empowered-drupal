@@ -242,7 +242,6 @@ function _empowered_create_vocabulary_tags(&$context) {
     'help' => st('Enter a comma-separated list of words to describe your content.'),
   );
   taxonomy_vocabulary_save($vocabulary);
-  $context['message'] = st('Created vocabulary %vocab', array('%vocab' => 'Tags'));
 }
 
 /**
@@ -255,6 +254,5 @@ function _empowered_create_media_folder_term($folder, &$context) {
       'vid' => $vocabulary->vid,
     );
     taxonomy_term_save($term);
-    $context['message'] = st('Created media folder %folder', array('%folder' => $folder));
   }
 }

@@ -29,6 +29,13 @@ libraries[imgAreaSelect][download][url] = "http://odyniec.net/projects/imgarease
 libraries[imgAreaSelect][directory_name] = "jquery.imgareaselect"
 libraries[imgAreaSelect][destination] = "libraries"
 
+; SimplePie RSS parser
+libraries[simplepie][directory_name] = "simplepie"
+libraries[simplepie][download][type] = "get"
+libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.compiled.php"
+libraries[simplepie][copy_file][] = "simplepie.compiled.php"
+libraries[simplepie][overwrite] = TRUE
+
 ; ckeditor 4.4.7
 libraries[ckeditor][type] = "libraries"
 libraries[ckeditor][download][type] = "file"

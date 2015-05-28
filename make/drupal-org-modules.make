@@ -44,23 +44,13 @@ projects[multiform][version] = "1.1"
 
 projects[jquery_ui_multiselect_widget][version] = "1.12"
 
-projects[media][version] = "2.x-dev"
-
-projects[media_browser_plus][version] = "3.x-dev"
-
-projects[views_tree][version] = "2.x-dev"
-
 projects[media_youtube][version] = "2.0-rc5"
-
-projects[file_entity][version] = "2.x-dev"
 
 projects[plupload][version] = "1.7"
 
 projects[diff][version] = "3.2"
 
 projects[entity][version] = "1.6"
-
-projects[entity_embed][version] = "1.x-dev"
 
 projects[job_scheduler][version] = "2.0-alpha3"
 
@@ -88,10 +78,6 @@ projects[rules][version] = "2.9"
 
 projects[uuid][version] = "1.0-alpha6"
 
-projects[ckeditor][version] = "1.x-dev"
-
-projects[wysiwyg_template][version] = "2.x-dev"
-
 projects[jquery_update][version] = "2.5"
 
 projects[views][version] = "3.11"
@@ -109,8 +95,6 @@ projects[xmlsitemap][version] = "2.2"
 projects[fences][version] = "1.0"
 
 projects[i18n][version] = "1.13"
-
-projects[i18nviews][version] = "3.x-dev"
 
 projects[l10n_update][version] = "2.0"
 
@@ -147,6 +131,73 @@ projects[advanced_text_formatter][version] = "1.4"
 projects[l10n_update][version] = "1.1"
 
 projects[speedy][version] = "1.18"
+
+; +++++ Modules Dev/specific revisions +++++
+; dev versions - best practice is download from git using commit number and append reason
+
+projects[media][version] = "2.x-dev"
+; Issues with jquery on dialog browser
+projects[oembed][version] = "2.x-dev"
+projects[oembed][download][type] = "git"
+projects[oembed][download][revision] = "9f7142b"
+projects[oembed][download][branch] = "7.x-2.x"
+
+; From Nov 24, 2014
+; Issues with ckeditor
+projects[oembed][version] = "1.x-dev"
+projects[oembed][download][type] = "git"
+projects[oembed][download][revision] = "1664b19"
+projects[oembed][download][branch] = "7.x-1.x"
+
+; From May 22, 2015
+; For supporting Media 2.x
+projects[media_browser_plus][version] = "3.x-dev"
+projects[media_browser_plus][download][type] = "git"
+projects[media_browser_plus][download][revision] = "86aa82a"
+projects[media_browser_plus][download][branch] = "7.x-3.x"
+
+; From Aug 15, 2014
+; Stable release is too old
+projects[views_tree][version] = "2.x-dev"
+projects[views_tree][download][type] = "git"
+projects[views_tree][download][revision] = "7dd712b"
+projects[views_tree][download][branch] = "7.x-3.x"
+
+; From Apr 21, 2015
+; Issues with media
+projects[file_entity][version] = "2.x-dev"
+projects[file_entity][download][type] = "git"
+projects[file_entity][download][revision] = "5effd7a"
+projects[file_entity][download][branch] = "7.x-2.x"
+
+; From May 26, 2015
+; Issues with ckeditor
+projects[entity_embed][version] = "1.x-dev"
+projects[entity_embed][download][type] = "git"
+projects[entity_embed][download][revision] = "1075ab9"
+projects[entity_embed][download][branch] = "7.x-1.x"
+
+; From Apr 01, 2015
+; Multiple issues
+projects[ckeditor][version] = "1.x-dev"
+projects[ckeditor][download][type] = "git"
+projects[ckeditor][download][revision] = "32f0973"
+projects[ckeditor][download][branch] = "7.x-1.x"
+
+; From Jan 30, 2015
+; Issues with ckeditor
+projects[wysiwyg_template][version] = "2.x-dev"
+projects[wysiwyg_template][download][type] = "git"
+projects[wysiwyg_template][download][revision] = "81ddf38"
+projects[wysiwyg_template][download][branch] = "7.x-2.x"
+
+; From Oct 23, 2014
+; No stable version yet
+projects[i18nviews][version] = "3.x-dev"
+projects[i18nviews][download][type] = "git"
+projects[i18nviews][download][revision] = "27e9809"
+projects[i18nviews][download][branch] = "7.x-3.x"
+
 
 ; security
 
@@ -197,7 +248,7 @@ projects[devel_contrib][subdir] = "dev"
 projects[search_krumo][version] = "1.6"
 projects[search_krumo][subdir] = "dev"
 
-projects[advanced_help][version] = "1.2"
+projects[advanced_help][version] = "1.3"
 projects[advanced_help][subdir] = "dev"
 
 

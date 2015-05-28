@@ -1,0 +1,7 @@
+name = Empowered Admin
+description = Extension for aggregating all specific empowered admin settings
+
+package = Empowered
+core = 7.x
+
+

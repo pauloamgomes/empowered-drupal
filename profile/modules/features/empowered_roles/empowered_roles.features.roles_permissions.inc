@@ -15,6 +15,7 @@ function empowered_roles_default_roles_permissions() {
     'name' => 'anonymous user',
     'weight' => 0,
     'permissions' => array(
+      'access content' => TRUE,
       'search content' => TRUE,
       'view files' => TRUE,
     ),
@@ -25,6 +26,8 @@ function empowered_roles_default_roles_permissions() {
     'name' => 'authenticated user',
     'weight' => 1,
     'permissions' => array(
+      'access content' => TRUE,
+      'search content' => TRUE,
       'view files' => TRUE,
     ),
   );

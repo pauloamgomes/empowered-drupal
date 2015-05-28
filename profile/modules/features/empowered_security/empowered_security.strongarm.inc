@@ -146,6 +146,13 @@ function empowered_security_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'm4032404_admin_only';
+  $strongarm->value = 0;
+  $export['m4032404_admin_only'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'password_policy_admin';
   $strongarm->value = 1;
   $export['password_policy_admin'] = $strongarm;

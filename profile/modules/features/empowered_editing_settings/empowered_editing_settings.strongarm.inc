@@ -20,34 +20,6 @@ function empowered_editing_settings_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'media_browser_plus_filesystem_folders';
-  $strongarm->value = 1;
-  $export['media_browser_plus_filesystem_folders'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'media_browser_plus_root_folder_tid';
-  $strongarm->value = '1';
-  $export['media_browser_plus_root_folder_tid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'media_browser_plus_thumbnails_as_default_browser';
-  $strongarm->value = 1;
-  $export['media_browser_plus_thumbnails_as_default_browser'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'media_browser_plus_thumbnails_as_default_browser_current';
-  $strongarm->value = 1;
-  $export['media_browser_plus_thumbnails_as_default_browser_current'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'media_dialogclass';
   $strongarm->value = 'media-wrapper';
   $export['media_dialogclass'] = $strongarm;
@@ -107,13 +79,6 @@ function empowered_editing_settings_strongarm() {
   $strongarm->name = 'media_resizable';
   $strongarm->value = '0';
   $export['media_resizable'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'media_root_folder';
-  $strongarm->value = 'media';
-  $export['media_root_folder'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

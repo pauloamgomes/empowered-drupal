@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Implements install requirements for ui hacks
+ * @author Paulo Gomes <pauloamgomes@gmail.com>
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function empowered_ui_hacks_enable() {
+  variable_set('ui_hacks_text_formats_collapsed', 1);
+}
+
+/**
+ * Implements hook_disable().
+ */
+function empowered_ui_hacks_disable() {
+  variable_del('ui_hacks_text_formats_collapsed');
+}

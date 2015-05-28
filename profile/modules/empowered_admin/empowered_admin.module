@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Implements core module functionality for empowered admin
+ * @author Paulo Gomes <pauloamgomes@gmail.com>
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function empowered_admin_menu() {
+
+  $items['admin/config/empowered'] = array(
+    'title' => 'Empowered Settings',
+    'page callback' => 'system_admin_menu_block_page',
+    'access arguments' => array('administer empowered settings'),
+    'file' => 'system.admin.inc',
+    'position' => 'right',
+    'file path' => drupal_get_path('module', 'system'),
+  );
+
+  return $items;
+}

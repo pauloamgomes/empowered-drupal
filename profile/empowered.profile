@@ -132,14 +132,18 @@ function empowered_install_tasks() {
   );
 
   // Add final configurations step.
+  $tasks['empowered_create_taxonomy'] = array(
+    'display_name' => st('Empowered Taxonomy'),
+    'display' => FALSE,
+    'type' => 'batch',
+  );
+
+  // Add final configurations step.
   $tasks['empowered_final_configurations'] = array(
     'display_name' => st('Empowered Configurations'),
     'display' => FALSE,
     'type' => 'batch',
   );
-
-  // Add terms to media-root
-  //http://data.agaric.com/create-vocabulary-and-taxonomy-terms-installation-profile
 
   return $tasks;
 }
@@ -151,7 +155,7 @@ function empowered_set_translations() {
 
   if ($translations = variable_get('empowered_translations', array())) {
     $translations = array_filter($translations);
-    //variable_del('empowered_translations');
+    variable_del('empowered_translations');
     include_once DRUPAL_ROOT . '/includes/locale.inc';
     include_once DRUPAL_ROOT . '/includes/iso.inc';
     $batchs = array();
@@ -181,6 +185,9 @@ function empowered_set_translations() {
   }
 }
 
+/**
+ * Final tasks for installation process
+ */
 function empowered_final_configurations() {
   drupal_flush_all_caches();
   // Remember the profile which was used.
@@ -195,4 +202,59 @@ function empowered_final_configurations() {
   // Cache a fully-built schema.
   drupal_get_schema(NULL, TRUE);
   features_revert();
+}
+
+/**
+ * Task for creating taxonomies
+ */
+function empowered_create_taxonomy() {
+  $operations = array();
+
+  $operations[] = array('_empowered_create_vocabulary_tags');
+
+  $folders = array(
+    st('Pictures'),
+    st('Videos'),
+    st('Audio'),
+    st('Documents'),
+  );
+
+  foreach($folders as $folder) {
+    $operations[] = array('_empowered_create_media_folder_term', array($folder));
+  }
+
+  $batch = array(
+    'title' => st('Creating empowered taxonomies'),
+    'operations' => $operations,
+  );
+
+  return $batch;
+}
+
+/**
+ * Create a default vocabulary named "Tags".
+ */
+function _empowered_create_vocabulary_tags(&$context) {
+  $vocabulary = (object) array(
+    'name' => st('Tags'),
+    'description' => st('Use tags to group articles on similar topics into categories.'),
+    'machine_name' => 'tags',
+    'help' => st('Enter a comma-separated list of words to describe your content.'),
+  );
+  taxonomy_vocabulary_save($vocabulary);
+  $context['message'] = st('Created vocabulary %vocab', array('%vocab' => 'Tags'));
+}
+
+/**
+ * Create terms on media folders taxonomy (media folders)
+ */
+function _empowered_create_media_folder_term($folder, &$context) {
+  if ($vocabulary = taxonomy_vocabulary_machine_name_load('media_folders')) {
+    $term = (object) array(
+      'name' => $folder,
+      'vid' => $vocabulary->vid,
+    );
+    taxonomy_term_save($term);
+    $context['message'] = st('Created media folder %folder', array('%folder' => $folder));
+  }
 }

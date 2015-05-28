@@ -73,6 +73,7 @@ dependencies[] = media
 dependencies[] = plupload
 dependencies[] = media_browser_plus
 dependencies[] = media_bulk_upload
+dependencies[] = media_internet
 ; Other
 dependencies[] = speedy
 dependencies[] = bean
@@ -116,6 +117,7 @@ dependencies[] = empowered_editing_settings
 dependencies[] = empowered_roles
 dependencies[] = empowered_defaults
 ; Custom empowered modules
+dependencies[] = empowered_admin
 dependencies[] = empowered_ui_hacks
 
 

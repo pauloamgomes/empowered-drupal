@@ -10,5 +10,4 @@ features[features_api][] = api:2
 features[roles_permissions][] = anonymous user
 features[roles_permissions][] = authenticated user
 features[roles_permissions][] = editor
-features[user_role][] = administrator
 features[user_role][] = editor

@@ -80,7 +80,7 @@ projects[rules][version] = "2.9"
 
 projects[uuid][version] = "1.0-alpha6"
 
-projects[jquery_update][version] = "2.5"
+projects[jquery_update][version] = "3.0-alpha2"
 
 projects[views][version] = "3.11"
 

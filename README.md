@@ -105,7 +105,6 @@ Module | Version
 [l10n_update ](http://drupal.org/project/l10n_update )  |  1.1
 [speedy ](http://drupal.org/project/speedy )  |  1.18
 [media ](http://drupal.org/project/media )  |  2.x-dev
-[oembed ](http://drupal.org/project/oembed )  |  2.x-dev
 [oembed ](http://drupal.org/project/oembed )  |  1.x-dev
 [media_browser_plus ](http://drupal.org/project/media_browser_plus )  |  3.x-dev
 [views_tree ](http://drupal.org/project/views_tree )  |  2.x-dev
@@ -134,7 +133,6 @@ Module | Version
 ## Libraries
 Library | Version
 --- | ---
-[ckeditor](http://ckeditor.com) | 4.4.7
 [plupload](https://github.com/moxiecode/plupload) | 1.5.6
 [Select2](https://github.com/ivaynberg/select2) | 3.4.5
 [ckeditor](http://ckeditor.com) | 4.4.7

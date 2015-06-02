@@ -77,7 +77,6 @@ if (!function_exists("system_form_install_configure_form_alter")) {
       '#size' => 10,
     );
 
-
     // Additional submit handlers for Lightning settings.
     $form['#submit'][] = 'empowered_extra_features_enable_submit';
   }
@@ -202,6 +201,10 @@ function empowered_final_configurations() {
   // Cache a fully-built schema.
   drupal_get_schema(NULL, TRUE);
   features_revert();
+
+  // Clear all non-error messages
+  drupal_get_messages('status', TRUE);
+  drupal_get_messages('completed', TRUE);
 }
 
 /**

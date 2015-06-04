@@ -134,6 +134,8 @@ projects[l10n_update][version] = "1.1"
 
 projects[speedy][version] = "1.18"
 
+projects[hierarchical_select][version] = "3.0-beta2"
+
 ; +++++ Modules Dev/specific revisions +++++
 ; dev versions - best practice is download from git using commit number and append reason
 
